@@ -1,0 +1,15 @@
+@import url('bootstrap/bootstrap.css');
+
+@import url('colors.css');
+@import url('fonts.css');
+@import url('swipe.css');
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.outer {
+  width: 100vw;
+  height: 100vh;
+}

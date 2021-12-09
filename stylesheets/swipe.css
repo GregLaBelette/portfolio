@@ -1,0 +1,61 @@
+.outer {
+  position: absolute;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+.active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.set-right {
+  left: 90%;
+}
+
+.set-left {
+  left: -70%;
+}
+
+.set-up {
+  bottom: -70%;
+}
+
+.set-down {
+  top: 90%
+}
+
+.move-right {
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.move-left {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.move-up {
+  transform: translateY(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.move-down {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}

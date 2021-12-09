@@ -1,0 +1,66 @@
+body {
+  --darker: #14171A;
+  --dark: #181D20;
+  --browner: #181915;
+  --brown: #23241F;
+  --pink: #F92473;
+  --green: #A5E22C;
+  --blue: #67D8EF;
+  --beige: #F8F8F2;
+}
+
+.text-darker {
+  color: var(--darker)
+}
+.bg-darker {
+  background-color: var(--darker);
+}
+
+.text-dark {
+  color: var(--dark)
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+
+.text-browner {
+  color: var(--browner)
+}
+.bg-browner {
+  background-color: var(--browner);
+}
+
+.text-brown {
+  color: var(--brown)
+}
+.bg-brown {
+  background-color: var(--brown);
+}
+
+.text-pink {
+  color: var(--pink)
+}
+.bg-pink {
+  background-color: var(--pink);
+}
+
+.text-green {
+  color: var(--green)
+}
+.bg-green {
+  background-color: var(--green);
+}
+
+.text-blue {
+  color: var(--blue)
+}
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.text-beige {
+  color: var(--beige)
+}
+.bg-beige {
+  background-color: var(--beige);
+}
