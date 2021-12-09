@@ -1,17 +1,18 @@
-.outer {
-  position: absolute;
-}
-
 .inner {
   overflow: hidden;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: calc(100vw - 100px);
+  height: calc(100vh - 100px);
 }
 
 .content {
   position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 80%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .active {
@@ -25,19 +26,19 @@
 }
 
 .set-right {
-  left: 90%;
+  left: 100%;
 }
 
 .set-left {
-  left: -70%;
+  left: -100%;
 }
 
 .set-up {
-  bottom: -70%;
+  top: -100%;
 }
 
 .set-down {
-  top: 90%
+  top: 100%
 }
 
 .move-right {
@@ -51,11 +52,11 @@
 }
 
 .move-up {
-  transform: translateY(100%);
+  transform: translateY(-100%);
   transition: transform 0.5s ease-in-out;
 }
 
 .move-down {
-  transform: translateY(-100%);
+  transform: translateY(100%);
   transition: transform 0.5s ease-in-out;
 }

@@ -1,47 +1,95 @@
+let current = document.querySelector('.shown');
+let next
+let right = current.querySelector('.right').value
+let left = current.querySelector('.left').value
+let up = current.querySelector('.up').value
+let down = current.querySelector('.down').value
+
+const reset = () => {
+  next.classList.remove('set-left');
+  next.classList.remove('set-right');
+  next.classList.remove('set-up');
+  next.classList.remove('set-down');
+
+  next.classList.remove('move-left');
+  next.classList.remove('move-right');
+  next.classList.remove('move-up');
+  next.classList.remove('move-down');
+
+  current = document.querySelector('.shown');
+
+  right = current.querySelector('.right').value;
+  left = current.querySelector('.left').value;
+  up = current.querySelector('.up').value;
+  down = current.querySelector('.down').value;
+}
+
 const swipeRight = () => {
-  const active = document.querySelector('.active');
-  const right = (document.querySelector('.active .right').value)
-  console.log(active);
-  console.log(right);
-  if (right) {
-    const next = document.getElementById(right);
-    console.log(next);
-    active.classList.add('move-left')
+  if (right != '') {
+    next = document.getElementById(right);
+
+    current.classList.remove('shown');
+    current.classList.add('hidden');
+
     next.classList.add('set-right');
     next.classList.remove('hidden');
-    next.classList.add('active');
+    next.classList.add('shown');
     next.classList.add('move-left');
-    setInterval(() => {
-      active.classList.remove('active');
-      active.classList.add('hidden');
-      active.classList.remove('move-left');
-      next.classList.remove('set-right');
-      next.classList.remove('move-left');
+    setTimeout(() => {
+      reset();
     }, 500);
   }
 }
 
 const swipeLeft = () => {
-  const active = document.querySelector('.active');
-  const left = (document.querySelector('.active .left').value)
-  console.log(active);
-  console.log(left);
-  if (left) {
-    const next = document.getElementById(left);
-    console.log(next)
-    active.classList.add('move-right');
+  if (left != '') {
+    next = document.getElementById(left);
+
+    current.classList.remove('shown');
+    current.classList.add('hidden');
+
     next.classList.add('set-left');
     next.classList.remove('hidden');
-    next.classList.add('active');
+    next.classList.add('shown');
     next.classList.add('move-right');
-    setInterval(() => {
-      // active.classList.remove('active');
-      // active.classList.add('hidden');
-      // active.classList.remove('move-right');
-      // next.classList.remove('set-left');
-      // next.classList.remove('move-right');
+    setTimeout(() => {
+      reset();
     }, 500);
   }
 }
 
-export { swipeRight, swipeLeft }
+const swipeUp = () => {
+  if (up != '') {
+    next = document.getElementById(up);
+
+    current.classList.remove('shown');
+    current.classList.add('hidden');
+
+    next.classList.add('set-up');
+    next.classList.remove('hidden');
+    next.classList.add('shown');
+    next.classList.add('move-down');
+    setTimeout(() => {
+      reset();
+    }, 500);
+  }
+}
+
+const swipeDown = () => {
+  if (down != '') {
+    next = document.getElementById(down);
+
+    current.classList.remove('shown');
+    current.classList.add('hidden');
+
+    next.classList.add('set-down');
+    next.classList.remove('hidden');
+    next.classList.add('shown');
+    next.classList.add('move-up');
+    setTimeout(() => {
+      reset();
+    }, 500);
+  }
+}
+
+export { swipeRight, swipeLeft, swipeUp, swipeDown }

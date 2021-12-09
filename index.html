@@ -19,37 +19,42 @@
 
 
     <div class="outer w-100 h-100 bg-darker">
-      <div class="inner w-100 h-100">
+      <div class="inner bg-dark">
 
-        <div id='dark' class="content bg-dark hidden">
-          <input type="hidden" class='left' value='green'>
-          <input type="hidden" class='right' value='pink'>
-          <input type="hidden" class='up' value='blue'>
-          <input type="hidden" class='down' value='beige'>
+        <div id='center' class="shown content d-flex flex-column justify-content-center align-items-center">
+          <input type="hidden" class='left' value='left'>
+          <input type="hidden" class='right' value='right'>
+          <input type="hidden" class='up' value='up'>
+          <input type="hidden" class='down' value='down'>
+          <div class='text-white fs-1 fw-light'>Center</div>
         </div>
-        <div id='green' class="content bg-green hidden">
+        <div id='left' class="hidden content d-flex flex-column justify-content-center align-items-center">
           <input type="hidden" class='left' value=''>
-          <input type="hidden" class='right' value='dark'>
+          <input type="hidden" class='right' value='center'>
           <input type="hidden" class='up' value=''>
           <input type="hidden" class='down' value=''>
+          <div class='text-white fs-1 fw-light'>Left</div>
         </div>
-        <div id='pink' class="content bg-pink active">
-          <input type="hidden" class='left' value='dark'>
+        <div id='right' class="hidden content d-flex flex-column justify-content-center align-items-center">
+          <input type="hidden" class='left' value='center'>
           <input type="hidden" class='right' value=''>
           <input type="hidden" class='up' value=''>
           <input type="hidden" class='down' value=''>
+          <div class='text-white fs-1 fw-light'>Right</div>
         </div>
-        <div id='blue' class="content bg-blue hidden">
+        <div id='up' class="hidden content d-flex flex-column justify-content-center align-items-center">
           <input type="hidden" class='left' value=''>
           <input type="hidden" class='right' value=''>
           <input type="hidden" class='up' value=''>
-          <input type="hidden" class='down' value='dark'>
+          <input type="hidden" class='down' value='center'>
+          <div class='text-white fs-1 fw-light'>Up</div>
         </div>
-        <div id='beige' class="content bg-beige hidden">
+        <div id='down' class="hidden content d-flex flex-column justify-content-center align-items-center">
           <input type="hidden" class='left' value=''>
           <input type="hidden" class='right' value=''>
-          <input type="hidden" class='up' value='dark'>
+          <input type="hidden" class='up' value='center'>
           <input type="hidden" class='down' value=''>
+          <div class='text-white fs-1 fw-light'>Down</div>
         </div>
 
       </div>
