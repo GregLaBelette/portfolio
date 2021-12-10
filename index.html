@@ -13,6 +13,9 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="stylesheets/index.css">
+
+    <!-- fontawesome -->
+    <!-- <script src="https://kit.fontawesome.com/576b94372a.js" crossorigin="anonymous"></script> -->
   </head>
 
   <body>
@@ -20,7 +23,7 @@
 
     <div class="outer w-100 h-100 bg-darker">
 
-      <!-- bootsrap -->
+      <!-- bootstrap -->
       <div class="container-fluid h-100">
         <div class="row h-100">
           <div class="col-12 col-lg-10 col-xl-8 m-auto p-0 h-100">
@@ -35,7 +38,7 @@
               <div id='box-center' class="d-flex flex-grow-1 w-100">
                 <!-- arrow left box -->
                 <div id="box-left" class="d-flex align-items-center">
-                  <img src="assets/images/arrow-left.png" alt="" style='height: 20px;'>
+                  <img src="assets/images/arrow-left.png" alt="" style='height: 20px'>
                 </div>
 
                 <!-- center div -->
@@ -43,47 +46,210 @@
 
                 <!-- contents starts here!!! -->
 
-                  <div id='center' class="shown content d-flex flex-column justify-content-center align-items-center">
-                    <input type="hidden" class='left' value='left'>
-                    <input type="hidden" class='right' value='right'>
-                    <input type="hidden" class='up' value='up'>
-                    <input type="hidden" class='down' value='down'>
-                    <div class='text-beige fs-1 fw-light'>Center</div>
-                  </div>
-                  <div id='left' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                  <!-- 1 - hello -->
+                  <div id='hello' class="shown content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
                     <input type="hidden" class='left' value=''>
-                    <input type="hidden" class='right' value='center'>
+                    <input type="hidden" class='right' value='memomix'>
                     <input type="hidden" class='up' value=''>
-                    <input type="hidden" class='down' value=''>
-                    <div class='text-white fs-1 fw-light'>Left</div>
+                    <input type="hidden" class='down' value='former-life'>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header w-25 px-1 text-start opacity-50'></div>
+                      <div class='center w-25 text-center '></div>
+                      <div class='right w-25 px-1 text-end opacity-50'>projects</div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
+                      <h1>hello</h1>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span>former life</span></div>
                   </div>
-                  <div id='right' class="hidden content d-flex flex-column justify-content-center align-items-center">
-                    <input type="hidden" class='left' value='center'>
+                  <!-- 2 - former life -->
+                  <div id='former-life' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
+                    <input type="hidden" class='left' value=''>
+                    <input type="hidden" class='right' value='memomix'>
+                    <input type="hidden" class='up' value='hello'>
+                    <input type="hidden" class='down' value='contact'>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header w-25 px-1 text-start opacity-50'></div>
+                      <div class='center w-25 text-center opacity-50'>hello</div>
+                      <div class='right w-25 px-1 text-end opacity-50'>projects</div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
+                      <h1>former life</h1>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span>contact</span></div>
+                  </div>
+                  <!-- 3 - contact -->
+                  <div id='contact' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
+                    <input type="hidden" class='left' value=''>
+                    <input type="hidden" class='right' value='memomix'>
+                    <input type="hidden" class='up' value='former-life'>
+                    <input type="hidden" class='down' value=''>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header w-25 px-1 text-start opacity-50'></div>
+                      <div class='center w-25 text-center opacity-50'>former life</div>
+                      <div class='right w-25 px-1 text-end opacity-50'>projects</div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
+                      <h1>contact</h1>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span></span></div>
+                  </div>
+                  <!-- 4 - memomix -->
+                  <div id='memomix' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
+                    <input type="hidden" class='left' value='hello'>
+                    <input type="hidden" class='right' value='back-end'>
+                    <input type="hidden" class='up' value=''>
+                    <input type="hidden" class='down' value='pregwheel'>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header w-25 px-1 text-start opacity-50'>about</div>
+                      <div class='center w-25 text-center'>projects</div>
+                      <div class='right w-25 px-1 text-end opacity-50'>stack</div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
+                      <h1>memomix</h1>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span>pregwheel</span></div>
+                  </div>
+                  <!-- 5 - pregwheel -->
+                  <div id='pregwheel' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
+                    <input type="hidden" class='left' value='hello'>
+                    <input type="hidden" class='right' value='back-end'>
+                    <input type="hidden" class='up' value='memomix'>
+                    <input type="hidden" class='down' value='locallibrary'>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header w-25 px-1 text-start opacity-50'>about</div>
+                      <div class='center w-25 text-center opacity-50'>memomix</div>
+                      <div class='right w-25 px-1 text-end opacity-50'>stack</div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
+                      <h1>pregwheel</h1>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span>local library</span></div>
+                  </div>
+                  <!-- 6 - locallibrary -->
+                  <div id='locallibrary' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
+                    <input type="hidden" class='left' value='hello'>
+                    <input type="hidden" class='right' value='back-end'>
+                    <input type="hidden" class='up' value='pregwheel'>
+                    <input type="hidden" class='down' value=''>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header w-25 px-1 text-start opacity-50'>about</div>
+                      <div class='center w-25 text-center opacity-50'>pregwheel</div>
+                      <div class='right w-25 px-1 text-end opacity-50'>stack</div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
+                      <h1>local library</h1>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span></span></div>
+                  </div>
+                  <!-- 7 - back-end -->
+                  <div id='back-end' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
+                    <input type="hidden" class='left' value='memomix'>
                     <input type="hidden" class='right' value=''>
                     <input type="hidden" class='up' value=''>
-                    <input type="hidden" class='down' value=''>
-                    <div class='text-white fs-1 fw-light'>Right</div>
+                    <input type="hidden" class='down' value='front-end'>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header w-25 px-1 text-start opacity-50'>projects</div>
+                      <div class='center w-25 text-center'>stack</div>
+                      <div class='right w-25 px-1 text-end opacity-50'></div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
+                      <h1>back-end</h1>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span>front-end & design</span></div>
                   </div>
-                  <div id='up' class="hidden content d-flex flex-column justify-content-center align-items-center">
-                    <input type="hidden" class='left' value=''>
+                  <!-- 8 - front-end & design -->
+                  <div id='front-end' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
+                    <input type="hidden" class='left' value='memomix'>
                     <input type="hidden" class='right' value=''>
-                    <input type="hidden" class='up' value=''>
-                    <input type="hidden" class='down' value='center'>
-                    <div class='text-white fs-1 fw-light'>Up</div>
+                    <input type="hidden" class='up' value='back-end'>
+                    <input type="hidden" class='down' value='tools'>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header w-25 px-1 text-start opacity-50'>projects</div>
+                      <div class='center w-25 text-center opacity-50'>back-end</div>
+                      <div class='right w-25 px-1 text-end opacity-50'></div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
+                      <h1>front-end & design</h1>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span>tools & stuff</span></div>
                   </div>
-                  <div id='down' class="hidden content d-flex flex-column justify-content-center align-items-center">
-                    <input type="hidden" class='left' value=''>
+                  <!-- 9 - tools & stuff -->
+                  <div id='tools' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
+                    <input type="hidden" class='left' value='memomix'>
                     <input type="hidden" class='right' value=''>
-                    <input type="hidden" class='up' value='center'>
+                    <input type="hidden" class='up' value='back-end'>
                     <input type="hidden" class='down' value=''>
-                    <div class='text-white fs-1 fw-light'>Down</div>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header w-25 px-1 text-start opacity-50'>projects</div>
+                      <div class='center w-25 text-center opacity-50'>front-end & design</div>
+                      <div class='right w-25 px-1 text-end opacity-50'></div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
+                      <h1>tools & stuff</h1>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span></span></div>
                   </div>
 
                 </div>
 
                 <!-- arrow right box -->
                 <div id="box-right" class="d-flex align-items-center">
-                  <img src="assets/images/arrow-right.png" alt="" style='height: 20px;'>
+                  <img src="assets/images/arrow-right.png" alt="" style='height: 20px; margin-top: 3px'>
                 </div>
               </div>
               <!-- arrow down box -->

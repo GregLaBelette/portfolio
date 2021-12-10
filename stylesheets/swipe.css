@@ -1,10 +1,6 @@
-.inner {
-  overflow: hidden;
+#box-center {
   position: relative;
-  /* top: 50px;
-  left: 50px;
-  width: calc(100vw - 100px);
-  height: calc(100vh - 100px); */
+  overflow: hidden;
 }
 
 .content {
@@ -15,14 +11,16 @@
   height: 100%;
 }
 
-.active {
+.shown {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
+  z-index: 1;
 }
 
 .hidden {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  z-index: 0;
 }
 
 .set-right {
