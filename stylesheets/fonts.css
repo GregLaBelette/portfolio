@@ -5,3 +5,10 @@ body {
   color: var(--beige);
   font-weight: 200;
 }
+
+h1 {
+  color: var(--green);
+  font-weight: 200;
+  font-size: 250%;
+  text-align: center;
+}
