@@ -15,10 +15,29 @@ const listenRight = () => {
       }, 500);
     };
   });
+  document.addEventListener('swiped-left', (e) => {
+    if (!blocked) {
+      swipeRight();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  });
 }
+
 const listenLeft = () => {
   document.addEventListener('keyup', (e) => {
     if (e.key === 'ArrowLeft' && !blocked) {
+      swipeLeft();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  });
+  document.addEventListener('swiped-right', (e) => {
+    if (!blocked) {
       swipeLeft();
       blocked = true;
       setTimeout(() => {
@@ -37,10 +56,28 @@ const listenUp = () => {
       }, 500);
     };
   });
+  document.addEventListener('swiped-down', (e) => {
+    if (!blocked) {
+      swipeUp();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  });
 }
 const listenDown = () => {
   document.addEventListener('keyup', (e) => {
     if (e.key === 'ArrowDown' && !blocked) {
+      swipeDown();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  });
+  document.addEventListener('swiped-down', (e) => {
+    if (!blocked) {
       swipeDown();
       blocked = true;
       setTimeout(() => {
