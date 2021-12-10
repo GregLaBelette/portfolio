@@ -5,6 +5,11 @@ import { swipeDown } from './swipe.js';
 
 let blocked = false;
 
+const boxCenter = document.getElementById('box-center');
+const swipe = new Hammer(boxCenter);
+swipe.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+
+
 const listenRight = () => {
   document.addEventListener('keyup', (e) => {
     if (e.key === 'ArrowRight' && !blocked) {
@@ -15,7 +20,7 @@ const listenRight = () => {
       }, 500);
     };
   });
-  document.addEventListener('swiped-left', (e) => {
+  swipe.on('swipeleft', (e) => {
     if (!blocked) {
       swipeRight();
       blocked = true;
@@ -23,7 +28,7 @@ const listenRight = () => {
         blocked = false;
       }, 500);
     };
-  });
+  })
 }
 
 const listenLeft = () => {
@@ -36,7 +41,7 @@ const listenLeft = () => {
       }, 500);
     };
   });
-  document.addEventListener('swiped-right', (e) => {
+  swipe.on('swiperight', (e) => {
     if (!blocked) {
       swipeLeft();
       blocked = true;
@@ -56,7 +61,7 @@ const listenUp = () => {
       }, 500);
     };
   });
-  document.addEventListener('swiped-down', (e) => {
+  swipe.on('swipedown', (e) => {
     if (!blocked) {
       swipeUp();
       blocked = true;
@@ -76,7 +81,7 @@ const listenDown = () => {
       }, 500);
     };
   });
-  document.addEventListener('swiped-down', (e) => {
+  swipe.on('swipeup', (e) => {
     if (!blocked) {
       swipeDown();
       blocked = true;
