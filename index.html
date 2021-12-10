@@ -19,44 +19,81 @@
 
 
     <div class="outer w-100 h-100 bg-darker">
-      <div class="inner bg-dark">
 
-        <div id='center' class="shown content d-flex flex-column justify-content-center align-items-center">
-          <input type="hidden" class='left' value='left'>
-          <input type="hidden" class='right' value='right'>
-          <input type="hidden" class='up' value='up'>
-          <input type="hidden" class='down' value='down'>
-          <div class='text-white fs-1 fw-light'>Center</div>
-        </div>
-        <div id='left' class="hidden content d-flex flex-column justify-content-center align-items-center">
-          <input type="hidden" class='left' value=''>
-          <input type="hidden" class='right' value='center'>
-          <input type="hidden" class='up' value=''>
-          <input type="hidden" class='down' value=''>
-          <div class='text-white fs-1 fw-light'>Left</div>
-        </div>
-        <div id='right' class="hidden content d-flex flex-column justify-content-center align-items-center">
-          <input type="hidden" class='left' value='center'>
-          <input type="hidden" class='right' value=''>
-          <input type="hidden" class='up' value=''>
-          <input type="hidden" class='down' value=''>
-          <div class='text-white fs-1 fw-light'>Right</div>
-        </div>
-        <div id='up' class="hidden content d-flex flex-column justify-content-center align-items-center">
-          <input type="hidden" class='left' value=''>
-          <input type="hidden" class='right' value=''>
-          <input type="hidden" class='up' value=''>
-          <input type="hidden" class='down' value='center'>
-          <div class='text-white fs-1 fw-light'>Up</div>
-        </div>
-        <div id='down' class="hidden content d-flex flex-column justify-content-center align-items-center">
-          <input type="hidden" class='left' value=''>
-          <input type="hidden" class='right' value=''>
-          <input type="hidden" class='up' value='center'>
-          <input type="hidden" class='down' value=''>
-          <div class='text-white fs-1 fw-light'>Down</div>
-        </div>
+      <!-- bootsrap -->
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-12 col-lg-10 col-xl-8 m-auto p-0 h-100">
 
+            <!-- vertical content + arrows-->
+            <div class="d-flex flex-column w-100 h-100 justify-content-center align-items-center">
+              <!-- arrow up box -->
+              <div id="box-up" class="d-flex w-100 justify-content-center">
+                <img src="assets/images/arrow-up.png" alt="" style='width: 20px;'>
+              </div>
+              <!-- horizontal content + arrows -->
+              <div id='box-center' class="d-flex flex-grow-1 w-100">
+                <!-- arrow left box -->
+                <div id="box-left" class="d-flex align-items-center">
+                  <img src="assets/images/arrow-left.png" alt="" style='height: 20px;'>
+                </div>
+
+                <!-- center div -->
+                <div id='box-center' class="d-flex flex-grow-1 w-100 bg-dark rounded">
+
+                <!-- contents starts here!!! -->
+
+                  <div id='center' class="shown content d-flex flex-column justify-content-center align-items-center">
+                    <input type="hidden" class='left' value='left'>
+                    <input type="hidden" class='right' value='right'>
+                    <input type="hidden" class='up' value='up'>
+                    <input type="hidden" class='down' value='down'>
+                    <div class='text-beige fs-1 fw-light'>Center</div>
+                  </div>
+                  <div id='left' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <input type="hidden" class='left' value=''>
+                    <input type="hidden" class='right' value='center'>
+                    <input type="hidden" class='up' value=''>
+                    <input type="hidden" class='down' value=''>
+                    <div class='text-white fs-1 fw-light'>Left</div>
+                  </div>
+                  <div id='right' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <input type="hidden" class='left' value='center'>
+                    <input type="hidden" class='right' value=''>
+                    <input type="hidden" class='up' value=''>
+                    <input type="hidden" class='down' value=''>
+                    <div class='text-white fs-1 fw-light'>Right</div>
+                  </div>
+                  <div id='up' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <input type="hidden" class='left' value=''>
+                    <input type="hidden" class='right' value=''>
+                    <input type="hidden" class='up' value=''>
+                    <input type="hidden" class='down' value='center'>
+                    <div class='text-white fs-1 fw-light'>Up</div>
+                  </div>
+                  <div id='down' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <input type="hidden" class='left' value=''>
+                    <input type="hidden" class='right' value=''>
+                    <input type="hidden" class='up' value='center'>
+                    <input type="hidden" class='down' value=''>
+                    <div class='text-white fs-1 fw-light'>Down</div>
+                  </div>
+
+                </div>
+
+                <!-- arrow right box -->
+                <div id="box-right" class="d-flex align-items-center">
+                  <img src="assets/images/arrow-right.png" alt="" style='height: 20px;'>
+                </div>
+              </div>
+              <!-- arrow down box -->
+              <div id="box-down" class="d-flex w-100 justify-content-center">
+                <img src="assets/images/arrow-down.png" alt="" style='width: 20px;'>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
 
