@@ -29,6 +29,24 @@ const listenRight = () => {
       }, 500);
     };
   })
+  document.getElementById('box-right').addEventListener('click', (e) => {
+    if (!blocked) {
+      swipeRight();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  })
+  document.querySelector('.shown .header-right').addEventListener('click', (e) => {
+    if (!blocked) {
+      swipeRight();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  })
 }
 
 const listenLeft = () => {
@@ -50,7 +68,26 @@ const listenLeft = () => {
       }, 500);
     };
   });
+  document.getElementById('box-left').addEventListener('click', (e) => {
+    if (!blocked) {
+      swipeLeft();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  })
+  document.querySelector('.shown .header-left').addEventListener('click', (e) => {
+    if (!blocked) {
+      swipeLeft();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  })
 }
+
 const listenUp = () => {
   document.addEventListener('keyup', (e) => {
     if (e.key === 'ArrowUp' && !blocked) {
@@ -70,7 +107,26 @@ const listenUp = () => {
       }, 500);
     };
   });
+  document.getElementById('box-up').addEventListener('click', (e) => {
+    if (!blocked) {
+      swipeUp();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  })
+  document.querySelector('.shown .header-center').addEventListener('click', (e) => {
+    if (!blocked) {
+      swipeUp();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  })
 }
+
 const listenDown = () => {
   document.addEventListener('keyup', (e) => {
     if (e.key === 'ArrowDown' && !blocked) {
@@ -90,6 +146,24 @@ const listenDown = () => {
       }, 500);
     };
   });
+  document.getElementById('box-down').addEventListener('click', (e) => {
+    if (!blocked) {
+      swipeDown();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  })
+  document.querySelector('.shown .footer').addEventListener('click', (e) => {
+    if (!blocked) {
+      swipeDown();
+      blocked = true;
+      setTimeout(() => {
+        blocked = false;
+      }, 500);
+    };
+  })
 }
 
 
