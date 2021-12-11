@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="stylesheets/index.css">
 
     <!-- fontawesome -->
-    <!-- <script src="https://kit.fontawesome.com/576b94372a.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/576b94372a.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -59,7 +59,7 @@
                     <input type="hidden" class='left' value=''>
                     <input type="hidden" class='right' value='memomix'>
                     <input type="hidden" class='up' value=''>
-                    <input type="hidden" class='down' value='former-life'>
+                    <input type="hidden" class='down' value='contact'>
                     <!-- headers -->
                     <div class="headers d-flex w-100 justify-content-between">
                       <div class='header-left w-25 px-3 text-start opacity-50'></div>
@@ -73,15 +73,15 @@
                     </div>
 
                     <!-- footer -->
-                    <div class="footer opacity-50"><span>former life</span></div>
+                    <div class="footer opacity-50"><span>contact</span></div>
                   </div>
-                  <!-- 2 - former life -->
-                  <div id='former-life' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                  <!-- 2 - contact -->
+                  <div id='contact' class="hidden content d-flex flex-column justify-content-center align-items-center">
                     <!-- hiddend inputs, navigation -->
                     <input type="hidden" class='left' value=''>
                     <input type="hidden" class='right' value='memomix'>
                     <input type="hidden" class='up' value='hello'>
-                    <input type="hidden" class='down' value='contact'>
+                    <input type="hidden" class='down' value='former-life'>
                     <!-- headers -->
                     <div class="headers d-flex w-100 justify-content-between">
                       <div class='header-left w-25 px-3 text-start opacity-50'></div>
@@ -91,29 +91,29 @@
 
                     <!-- center content -->
                     <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
-                      <h1>former life</h1>
+                      <h1>contact</h1>
                     </div>
 
                     <!-- footer -->
-                    <div class="footer opacity-50"><span>contact</span></div>
+                    <div class="footer opacity-50"><span>former life</span></div>
                   </div>
-                  <!-- 3 - contact -->
-                  <div id='contact' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                  <!-- 3 - former life -->
+                  <div id='former-life' class="hidden content d-flex flex-column justify-content-center align-items-center">
                     <!-- hiddend inputs, navigation -->
                     <input type="hidden" class='left' value=''>
                     <input type="hidden" class='right' value='memomix'>
-                    <input type="hidden" class='up' value='former-life'>
+                    <input type="hidden" class='up' value='contact'>
                     <input type="hidden" class='down' value=''>
                     <!-- headers -->
                     <div class="headers d-flex w-100 justify-content-between">
                       <div class='header-left w-25 px-3 text-start opacity-50'></div>
-                      <div class='header-center w-25 text-center opacity-50'>former life</div>
+                      <div class='header-center w-25 text-center opacity-50'>contact</div>
                       <div class='header-right w-25 px-3 text-end opacity-50'>projects</div>
                     </div>
 
                     <!-- center content -->
                     <div class="d-flex flex-grow-1 justify-content-center align-items-center w-100">
-                      <h1>contact</h1>
+                      <h1>former life</h1>
                     </div>
 
                     <!-- footer -->
@@ -265,12 +265,25 @@
               </div>
             </div>
 
+            <!-- dropdown / burger -->
+            <div class="dropdown burger">
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-bars text-beige opacity-50 fs-4"></i>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a id='menu-about' class="dropdown-item" href="#">about</a></li>
+                <li><a id='menu-projects' class="dropdown-item" href="#">projects</a></li>
+                <li><a id='menu-stack' class="dropdown-item" href="#">stack</a></li>
+                <li><a id='menu-contact' class="dropdown-item" href="#">contact</a></li>
+                <li><a id='menu-resume' class="dropdown-item" href="/resume.pdf" target='_blank'>resume</a></li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
 
-    <script src="scripts/bootstrap/bootstrap.min.js" ></script>
     <script src="scripts/bootstrap/bootstrap.bundle.min.js" ></script>
     <script src="scripts/modules/hammer.js" type='module'></script>
     <script src="scripts/index.js" type='module'></script>

@@ -1,7 +1,4 @@
-import { swipeRight } from './swipe.js';
-import { swipeLeft } from './swipe.js';
-import { swipeUp } from './swipe.js';
-import { swipeDown } from './swipe.js';
+import { goTo, swipeRight, swipeLeft, swipeUp, swipeDown } from './navigation.js';
 
 let blocked = false;
 
@@ -9,6 +6,22 @@ const boxCenter = document.getElementById('box-center');
 const swipe = new Hammer(boxCenter);
 swipe.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
 
+// menu navigation listeners
+
+document.getElementById('menu-about').addEventListener('click', (e) => {
+  goTo('hello');
+});
+document.getElementById('menu-projects').addEventListener('click', (e) => {
+  goTo('memomix');
+});
+document.getElementById('menu-stack').addEventListener('click', (e) => {
+  goTo('back-end');
+});
+document.getElementById('menu-contact').addEventListener('click', (e) => {
+  goTo('contact');
+});
+
+// directions navigation listeners
 
 const listenRight = () => {
   document.addEventListener('keyup', (e) => {
@@ -38,14 +51,16 @@ const listenRight = () => {
       }, 500);
     };
   })
-  document.querySelector('.shown .header-right').addEventListener('click', (e) => {
-    if (!blocked) {
-      swipeRight();
-      blocked = true;
-      setTimeout(() => {
-        blocked = false;
-      }, 500);
-    };
+  document.querySelectorAll('.header-right').forEach((elt) => {
+    elt.addEventListener('click', (e) => {
+      if (!blocked) {
+        swipeRight();
+        blocked = true;
+        setTimeout(() => {
+          blocked = false;
+        }, 500);
+      };
+    })
   })
 }
 
@@ -77,14 +92,16 @@ const listenLeft = () => {
       }, 500);
     };
   })
-  document.querySelector('.shown .header-left').addEventListener('click', (e) => {
-    if (!blocked) {
-      swipeLeft();
-      blocked = true;
-      setTimeout(() => {
-        blocked = false;
-      }, 500);
-    };
+  document.querySelectorAll('.header-left').forEach((elt) => {
+    elt.addEventListener('click', (e) => {
+      if (!blocked) {
+        swipeLeft();
+        blocked = true;
+        setTimeout(() => {
+          blocked = false;
+        }, 500);
+      };
+    })
   })
 }
 
@@ -116,14 +133,16 @@ const listenUp = () => {
       }, 500);
     };
   })
-  document.querySelector('.shown .header-center').addEventListener('click', (e) => {
-    if (!blocked) {
-      swipeUp();
-      blocked = true;
-      setTimeout(() => {
-        blocked = false;
-      }, 500);
-    };
+  document.querySelectorAll('.header-center').forEach((elt) => {
+    elt.addEventListener('click', (e) => {
+      if (!blocked) {
+        swipeUp();
+        blocked = true;
+        setTimeout(() => {
+          blocked = false;
+        }, 500);
+      };
+    })
   })
 }
 
@@ -155,14 +174,16 @@ const listenDown = () => {
       }, 500);
     };
   })
-  document.querySelector('.shown .footer').addEventListener('click', (e) => {
-    if (!blocked) {
-      swipeDown();
-      blocked = true;
-      setTimeout(() => {
-        blocked = false;
-      }, 500);
-    };
+  document.querySelectorAll('.footer').forEach((elt) => {
+    elt.addEventListener('click', (e) => {
+      if (!blocked) {
+        swipeDown();
+        blocked = true;
+        setTimeout(() => {
+          blocked = false;
+        }, 500);
+      };
+    })
   })
 }
 
