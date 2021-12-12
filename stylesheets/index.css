@@ -5,6 +5,6 @@
 @import url('fonts.css');
 @import url('swipe.css');
 
-body {
-  height: 100vh;
+html, body, .outer {
+  height: 100%;
 }

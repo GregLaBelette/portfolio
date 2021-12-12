@@ -1,7 +1,7 @@
 
 .burger {
   position: absolute;
-  right: 20px;
+  right: 16px;
   z-index: 1;
 }
 
@@ -35,11 +35,11 @@
 
 @media(min-width: 992px) {
   .burger {
-    top: 15px;
+    top: 14px;
   }
 }
 @media(max-width: 992px) {
   .burger {
-    bottom: 15px;
+    bottom: 14px;
   }
 }
