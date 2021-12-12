@@ -5,6 +5,10 @@
 @import url('fonts.css');
 @import url('swipe.css');
 
+html, body {
+  background-color: var(--darker);
+}
+
 html, body, .outer {
   height: 100%;
 }
