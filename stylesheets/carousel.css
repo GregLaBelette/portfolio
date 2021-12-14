@@ -1,0 +1,39 @@
+.carousel {
+  z-index: 0;
+  width: 75%;
+  padding: 5px 0px;
+}
+
+.carousel-inner {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+  z-index: 0;
+}
+
+.carousel-item {
+  z-index: 0;
+}
+
+.carousel img {
+  object-fit: cover;
+  object-position: top center;
+  z-index: 1;
+  filter: brightness(50%)
+}
+@media (min-width: 768px) {
+  .carousel img {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .carousel img {
+    height:50vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel img {
+    height: 30vh;
+  }
+}
