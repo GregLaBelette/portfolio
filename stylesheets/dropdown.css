@@ -31,6 +31,14 @@
 .dropdown-item.active  {
   background-color: var(--pink) !important;
 }
+.dropdown-item:focus  {
+  background-color: var(--green) !important;
+  border-radius: 5px;
+}
+.dropdown-item.focus  {
+  background-color: var(--green) !important;
+  border-radius: 5px;
+}
 
 
 
