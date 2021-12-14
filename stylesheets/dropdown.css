@@ -32,11 +32,11 @@
   background-color: var(--pink) !important;
 }
 .dropdown-toggle:focus  {
-  background-color: var(--green) !important;
+  border-color: var(--green) !important;
   border-radius: 5px;
 }
 .dropdown-toggle.focus  {
-  background-color: var(--green) !important;
+  border-color: var(--green) !important;
   border-radius: 5px;
 }
 
