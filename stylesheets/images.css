@@ -1,0 +1,15 @@
+.rounded-img {
+ width: min(40vh, 40vw);
+ max-width: 300px;
+ border-radius: 50%;
+}
+
+.logo {
+  width: 64px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 48px;
+  }
+}

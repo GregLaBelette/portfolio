@@ -1,0 +1,7 @@
+.header-left, .header-center, .header-right {
+  width: 33%
+}
+
+.container {
+  max-width: 600px;
+}
