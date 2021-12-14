@@ -42,11 +42,11 @@
 
 @media(min-width: 992px) {
   .burger {
-    top: 14px;
+    top: 16px;
   }
 }
 @media(max-width: 992px) {
   .burger {
-    bottom: 14px;
+    bottom: 16px;
   }
 }
