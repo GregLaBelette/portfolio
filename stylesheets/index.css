@@ -8,7 +8,7 @@
 @import url('swipe.css');
 
 html, body {
-  background-color: var(--darker);
+  background-color: var(--browner);
 }
 
 html, body, .outer {

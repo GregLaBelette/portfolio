@@ -5,3 +5,17 @@
 .container {
   max-width: 600px;
 }
+
+@media (min-height: 500px) {
+  .cont-overflow {
+    justify-content: center;
+  }
+}
+@media (max-height: 500px) {
+  .cont-overflow {
+    overflow: auto;
+  }
+  .cont-auto {
+    margin: auto;
+  }
+}
