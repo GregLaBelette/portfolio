@@ -32,12 +32,10 @@
   background-color: var(--pink) !important;
 }
 .dropdown-toggle:focus  {
-  outline: 1px solid var(--green);
-  border-radius: 2px;
+  outline: 1px solid transparent;
 }
 .dropdown-toggle.focus  {
-  outline: 1px solid var(--green);
-  border-radius: 2px;
+  outline: 1px solid transparent;
 }
 
 
