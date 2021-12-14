@@ -16,10 +16,6 @@
   display: none;
 }
 
-.dropdown-menu {
-  background-color: var(--brown);
-}
-
 .dropdown-item {
   color: var(--beige);
   opacity: 50%;
@@ -44,9 +40,15 @@
   .burger {
     top: 16px;
   }
+  .dropdown-menu {
+    background-color: var(--brown);
+  }
 }
 @media(max-width: 992px) {
   .burger {
     bottom: 16px;
+  }
+  .dropdown-menu {
+    background-color: var(--browner);
   }
 }
