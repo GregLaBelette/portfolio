@@ -1,6 +1,5 @@
 .carousel {
   z-index: 0;
-  width: 75%;
   padding: 5px 0px;
 }
 
@@ -21,18 +20,25 @@
   filter: brightness(50%)
 }
 @media (min-width: 768px) {
-  .carousel img {
+  .carousel{
+    width: 80%;
+  }.carousel img {
     height: 40vh;
   }
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
-  .carousel img {
+  .carousel{
+    width: 80%;
+  }.carousel img {
     height:50vh;
   }
 }
 
 @media (max-width: 500px) {
+  .carousel{
+    width: 100%;
+  }
   .carousel img {
     height: 30vh;
   }
