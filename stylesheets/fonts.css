@@ -28,6 +28,12 @@ h3 {
   line-height: 24px;
 }
 
+p {
+  text-indent: 10%;
+  text-align: justify;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   h1 {
     font-size: 320%;

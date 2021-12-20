@@ -6,12 +6,12 @@
   max-width: 600px;
 }
 
-@media (min-height: 500px) {
+@media (min-height: 600px) {
   .cont-overflow {
     justify-content: center;
   }
 }
-@media (max-height: 500px) {
+@media (max-height: 600px) {
   .cont-overflow {
     overflow: auto;
   }

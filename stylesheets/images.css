@@ -8,8 +8,15 @@
   width: 64px;
 }
 
+.logo-small {
+  width: 48px;
+}
+
 @media (max-width: 768px) {
   .logo {
     width: 48px;
+  }
+  .logo-small {
+    width: 32px;
   }
 }

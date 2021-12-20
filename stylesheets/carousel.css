@@ -17,26 +17,40 @@
   object-fit: cover;
   object-position: top center;
   z-index: 1;
-  filter: brightness(50%)
 }
+
+.carousel-former img {
+  filter: brightness(50%) grayscale(20%);
+}
+
 @media (min-width: 768px) {
-  .carousel{
+  .carousel {
     width: 80%;
-  }.carousel img {
+  }
+  .carousel-former img {
     height: 40vh;
+  }
+  .carousel img {
+    height: 30vh;
   }
 }
 
 @media (min-width: 500px) and (max-width: 768px) {
-  .carousel{
+  .carousel {
     width: 80%;
-  }.carousel img {
-    height:50vh;
+  }
+
+  .carousel-former img {
+    width: 80%;
+    height: 50vh;
+  }
+  .carousel img {
+    height: 70vh;
   }
 }
 
 @media (max-width: 500px) {
-  .carousel{
+  .carousel {
     width: 100%;
   }
   .carousel img {
