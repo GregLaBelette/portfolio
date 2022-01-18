@@ -37,7 +37,6 @@
 
   <body>
 
-
     <div class="outer bg-browner">
 
       <!-- bootstrap -->
@@ -49,19 +48,19 @@
             <div class="d-flex flex-column w-100 h-100 justify-content-center align-items-center">
               <!-- arrow up box -->
               <div id="box-up" class="d-flex w-100 justify-content-center">
-                <img src="assets/images/arrow-up.png" alt="" style='width: 15px;'>
+                <img src="images/arrow-up.png" alt="" style='width: 15px;'>
               </div>
               <!-- horizontal content + arrows -->
               <div id='box-center' class="d-flex flex-grow-1 w-100">
                 <!-- arrow left box -->
                 <div id="box-left" class="d-flex align-items-center">
-                  <img src="assets/images/arrow-left.png" alt="" style='height: 15px'>
+                  <img src="images/arrow-left.png" alt="" style='height: 15px'>
                 </div>
 
                 <!-- center div -->
                 <div id='box-center' class="d-flex flex-grow-1 w-100 bg-brown rounded">
 
-                <!-- contents starts here!!! -->
+                  <!-- contents starts here!!! -->
 
                   <!-- 1 - hello -->
                   <div id='hello' class="shown content d-flex flex-column justify-content-center align-items-center">
@@ -171,7 +170,7 @@
 
                         <p class='mb-4'>I used to be a <span class='text-pink'>live sound engineer</span> for tours, festivals and events, and then to work as projects manager for a large audio rental company called <a href='http://www.dushow.com' target='_blank' class='text-blue'>Dushow</a>. I learned projects building, as well as hiring technical teams</p>
                         <p>I still practise music as a <span class='text-blue'>recording and live musician</span>, I play the bass & the guitar as an occasionnal job, self-employed</p>
-                        <p>I am a fulfilled husband and father off two little girls</p>
+                        <p>I am a fulfilled husband and father of two little girls</p>
                       </div>
                     </div>
 
@@ -226,7 +225,7 @@
                           </a>
                         </div>
 
-                        <p><span class='text-pink'>Ruby on Rails</span> Le Wagon end-of-batch project with <a href="https://www.linkedin.com/in/flaviagallois/" target='_blank' class='text-blue'>Flavia Gallois</a> and  <a href="https://www.linkedin.com/in/tha%C3%AFs-paris-4aa343198/" target='_blank' class='text-blue'>Thais Paris</a>. Scraps URLs, allows to tag, rate and comment them, exports a reading note to PDF.</p>
+                        <p><span class='text-pink'>Ruby on Rails</span> Le Wagon end-of-batch project with <a href="https://www.linkedin.com/in/flaviagallois/" target='_blank' class='text-blue'>Flavia Gallois</a> and <a href="https://www.linkedin.com/in/tha%C3%AFs-paris-4aa343198/" target='_blank' class='text-blue'>Thais Paris</a>. Scraps URLs, allows to tag, rate and comment them, exports a reading note to PDF.</p>
                         <p>Made us practise <span class='text-blue'>Stimulus and Ajax requests</span>, integrate a <span class='text-blue'>JS library</span> (TS Particles), <span class='text-blue'>Web scrapping</span> with Capybara, <span class='text-blue'>PostGreSQL search</span> with PGSearch & Trigram...</p>
 
                         <div class="logos d-flex justify-content-center align-items-center mb-4">
@@ -248,7 +247,7 @@
                     <input type="hidden" class='left' value='hello'>
                     <input type="hidden" class='right' value='back-end'>
                     <input type="hidden" class='up' value='memomix'>
-                    <input type="hidden" class='down' value='locallibrary'>
+                    <input type="hidden" class='down' value='myweb'>
                     <!-- headers -->
                     <div class="headers d-flex w-100 justify-content-between">
                       <div class='header-left px-2 text-start opacity-50'>about</div>
@@ -259,7 +258,7 @@
                     <!-- center content -->
                     <div class="cont-overflow h-100 w-100 d-flex flex-column">
                       <div class="cont-auto container d-flex flex-column justify-content-evenly align-items-center">
-                        <h1 class='mb-3'>Pregwheel</h1>
+                        <h1 class='mb-3'>PregWheel</h1>
                         <h3 class='mb-3'>An interactive <a href="https://pregwheel.gregoirevallette.com" target='_blank' class='text-pink'>pregnancy calendar</a></h3>
 
                         <!-- carousel -->
@@ -305,17 +304,79 @@
                     <!-- footer -->
                     <div class="footer opacity-50"><span>local library</span></div>
                   </div>
-                  <!-- 6 - locallibrary -->
-                  <div id='locallibrary' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                  <!-- 6 - myweb -->
+                  <div id='myweb' class="hidden content d-flex flex-column justify-content-center align-items-center">
                     <!-- hiddend inputs, navigation -->
                     <input type="hidden" class='left' value='hello'>
                     <input type="hidden" class='right' value='back-end'>
                     <input type="hidden" class='up' value='pregwheel'>
-                    <input type="hidden" class='down' value='myweb'>
+                    <input type="hidden" class='down' value='locallibrary'>
                     <!-- headers -->
                     <div class="headers d-flex w-100 justify-content-between">
                       <div class='header-left px-2 text-start opacity-50'>about</div>
                       <div class='header-center text-center opacity-50'>pregwheel</div>
+                      <div class='header-right px-2 text-end opacity-50'>stack</div>
+                    </div>
+
+                    <!-- center content -->
+                    <div class="cont-overflow h-100 w-100 d-flex flex-column">
+                      <div class="cont-auto container d-flex flex-column justify-content-evenly align-items-center">
+                        <h1 class='mb-3'>MyWeb</h1>
+                        <h3 class='mb-3'><a href="http://myweb.gregoirevallette.com" target='_blank' class='text-pink'>MyWeb</a> is a 8-hour Rails challenge @LeWagon</h3>
+
+                        <!-- carousel -->
+                        <div id="carouselMywebIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
+                          <a href="http://Myweb.gregoirevallette.com" target='_blank' class='w-100'>
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active"><img src="assets/images/myweb/myweb-1.png" class="d-block w-100" alt="..."></div>
+                              <div class="carousel-item"><img src="assets/images/myweb/myweb-2.png" class="d-block w-100" alt="..."></div>
+                              <div class="carousel-item"><img src="assets/images/myweb/myweb-3.png" class="d-block w-100" alt="..."></div>
+                              <div class="carousel-item"><img src="assets/images/myweb/myweb-4.png" class="d-block w-100" alt="..."></div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </a>
+                        </div>
+
+                        <p>Later after the challenge, used it to practise <span class="text-blue">WebSocket</span> through <span class="text-pink">ActionCable</span>, implementing a realtime messaging system, and <span class="text-blue">Stimulus</span> to adapt comments position, color and naming, depending on logged in user</p>
+                        <p>Also made it a lab for <span class="text-blue">unit and system testing</span> with <span class="text-pink">Rails MiniTest</span>, as well as <span class="text-blue">continuous integration and deployment on Heroku</span> with <span class="text-pink">Github Actions</span></p>
+
+                        <div class="logos d-flex justify-content-center align-items-center mb-4">
+                          <img src="assets/images/icons/rails.png" alt="a" class="logo-small me-2">
+                          <img src="assets/images/icons/postgre.png" alt="a" class="logo-small me-2">
+                          <img src="assets/images/icons/stimulus.png" alt="a" class="logo-small me-2">
+                          <img src="assets/images/icons/heroku.png" alt="a" class="logo-small">
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- footer -->
+                    <div class="footer opacity-50"><span>local library</span></div>
+                  </div>
+                  <!-- 7 - locallibrary -->
+                  <div id='locallibrary' class="hidden content d-flex flex-column justify-content-center align-items-center">
+                    <!-- hiddend inputs, navigation -->
+                    <input type="hidden" class='left' value='hello'>
+                    <input type="hidden" class='right' value='back-end'>
+                    <input type="hidden" class='up' value='myweb'>
+                    <input type="hidden" class='down' value=''>
+                    <!-- headers -->
+                    <div class="headers d-flex w-100 justify-content-between">
+                      <div class='header-left px-2 text-start opacity-50'>about</div>
+                      <div class='header-center text-center opacity-50'>myweb</div>
                       <div class='header-right px-2 text-end opacity-50'>stack</div>
                     </div>
 
@@ -359,68 +420,6 @@
                           <img src="assets/images/icons/mongo.png" alt="a" class="logo-small me-2">
                           <img src="assets/images/icons/mongoose.png" alt="a" class="logo-small me-2">
                           <img src="assets/images/icons/pug.png" alt="a" class="logo-small">
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <!-- footer -->
-                    <div class="footer opacity-50"><span>myweb</span></div>
-                  </div>
-                  <!-- 7 - myweb -->
-                  <div id='myweb' class="hidden content d-flex flex-column justify-content-center align-items-center">
-                    <!-- hiddend inputs, navigation -->
-                    <input type="hidden" class='left' value='hello'>
-                    <input type="hidden" class='right' value='back-end'>
-                    <input type="hidden" class='up' value='locallibrary'>
-                    <input type="hidden" class='down' value=''>
-                    <!-- headers -->
-                    <div class="headers d-flex w-100 justify-content-between">
-                      <div class='header-left px-2 text-start opacity-50'>about</div>
-                      <div class='header-center text-center opacity-50'>local library</div>
-                      <div class='header-right px-2 text-end opacity-50'>stack</div>
-                    </div>
-
-                    <!-- center content -->
-                    <div class="cont-overflow h-100 w-100 d-flex flex-column">
-                      <div class="cont-auto container d-flex flex-column justify-content-evenly align-items-center">
-                        <h1 class='mb-3'>MyWeb</h1>
-                        <h3 class='mb-3'><a href="http://myweb.gregoirevallette.com" target='_blank' class='text-pink'>MyWeb</a> is a 8-hour Rails challenge @LeWagon</h3>
-
-                        <!-- carousel -->
-                        <div id="carouselMywebIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
-                          <a href="http://Myweb.gregoirevallette.com" target='_blank' class='w-100'>
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                              <button type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active"><img src="assets/images/myweb/myweb-1.png" class="d-block w-100" alt="..."></div>
-                              <div class="carousel-item"><img src="assets/images/myweb/myweb-2.png" class="d-block w-100" alt="..."></div>
-                              <div class="carousel-item"><img src="assets/images/myweb/myweb-3.png" class="d-block w-100" alt="..."></div>
-                              <div class="carousel-item"><img src="assets/images/myweb/myweb-4.png" class="d-block w-100" alt="..."></div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMywebIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </a>
-                        </div>
-
-                        <p>Very simple two-model app (Posts & Comments)</p>
-                        <p>Later after the challenge, used it to practise <span class="text-blue">WebSocket</span> through <span class="text-pink">ActionCable</span>, implementing a realtime messaging system, and <span class="text-blue">Stimulus</span> to adapt comments position, color and naming, depending on logged in user</p>
-
-                        <div class="logos d-flex justify-content-center align-items-center mb-4">
-                          <img src="assets/images/icons/rails.png" alt="a" class="logo-small me-2">
-                          <img src="assets/images/icons/postgre.png" alt="a" class="logo-small me-2">
-                          <img src="assets/images/icons/stimulus.png" alt="a" class="logo-small me-2">
-                          <img src="assets/images/icons/heroku.png" alt="a" class="logo-small">
                         </div>
 
                       </div>
